@@ -6,11 +6,15 @@ import theme from "./assets/material/theme";
 import { ThemeProvider } from "@material-ui/core";
 import Home from './screens/Home.jsx'
 
+import { BrowserRouter } from 'react-router-dom'
+
 const App = () => {
   return (
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
         <Home />
-      </ThemeProvider>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

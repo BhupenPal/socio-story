@@ -4,20 +4,23 @@ const theme = createMuiTheme({
     shadows: Array(25).fill('none'),
     palette: {
         primary: {
-            main: '#7E7E7E',
+            main: '#043230',
         },
         secondary: {
-            main: '#FFB6C1',
+            main: '#ABF0E9',
+        },
+        info: {
+            main: '#D4F3EF'
         }
     },
     typography: {
         fontFamily: 'Poppins',
         h1: {
-            fontSize: '2rem', //32px
+            fontSize: '5.62rem', //32px
             fontWeight: 600
         },
         h2: {
-            fontSize: '1.75rem', //28px
+            fontSize: '3.75rem', //28px
             fontWeight: 600
         },
         h3: {
@@ -35,14 +38,21 @@ const theme = createMuiTheme({
         h6: {
             fontSize: '0.75rem', //12px
             fontWeight: 500
+        },
+        body1: {
+            fontSize: '1.50rem', //24px
+        },
+        body2: {
+            fontSize: '30px'
         }
     },
     overrides: {
         MuiButton: {
             root: {
-                transform: 'none'
-            },
-        },
+                transform: 'none',
+                fontSize: 20
+            }
+        }
     },
     props: {
         MuiButton: {
@@ -66,7 +76,7 @@ const theme = createMuiTheme({
             variant: 'outlined',
             fullWidth: true
         }
-    },
+    }
 });
 
 export default theme;
