@@ -60,6 +60,26 @@ export default theme => ({
         height: '8vw',
         width: `${8*10.1}vw`
     },
+    
+    purpose:{
+        borderRadius : '20px',
+        height : '80%',
+        display: 'flex',
+        flexDirection : 'column',
+       alignItems :'center',
+       textAlign: 'center'
+    },
 
+    nomination:{
+        borderRadius : '20px',
+        height : '80%',
+        display: 'flex',
+        flexDirection : 'column',
+       alignItems :'center',
+       textAlign: 'center',
+       padding : '40px 5px 40px 5px',
+       fontWeight:'normal',
+       color : 'white'
+    }
     // Purpose Box
 });
