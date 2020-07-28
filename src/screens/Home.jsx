@@ -272,19 +272,21 @@ const Home = (props) => {
    </Grid>
 
    <Grid item container justify="center">
-     <Grid item xs={10} lg={5} className={classes.impact_details}>
+     <Grid item xs={10} lg={4} className={classes.impact_details}>
        <img src="../src/assets/img/virtual.png" style={{paddingRight:20}}></img>
        <Typography>Mode: Virtual</Typography>
      </Grid>
-     <Grid item xs={10} lg={5} className={classes.impact_details}>
+     <Grid item xs={10} lg={4} className={classes.impact_details}>
        <img src="../src/assets/img/calender.png" style={{paddingRight:20}}></img>
        <Typography>Date: August 22, 2020</Typography>
      </Grid>
-     <Grid item xs={10} lg={5} className={classes.impact_details}>
+     </Grid>
+     <Grid item container justify="center">
+     <Grid item xs={10} lg={4} className={classes.impact_details}>
        <img src="../src/assets/img/tick2.png" style={{paddingRight:20}}></img>
        <Typography>Duration: 90 minutes </Typography>
      </Grid>
-     <Grid item xs={10} lg={5}  className={classes.impact_details}>
+     <Grid item xs={10} lg={4}  className={classes.impact_details}>
        <img src="../src/assets/img/clock.png" style={{paddingRight:20}}></img>
        <Typography> Time: 1600 hrs</Typography>
      </Grid>
