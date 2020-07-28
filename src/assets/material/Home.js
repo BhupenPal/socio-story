@@ -60,6 +60,7 @@ export default theme => ({
         height: '8vw',
         width: `${8*10.1}vw`
     },
+      // Purpose Box
     
     purpose:{
         borderRadius : '20px',
@@ -80,6 +81,26 @@ export default theme => ({
        padding : '40px 5px 40px 5px',
        fontWeight:'normal',
        color : 'white'
+    },
+
+    impact : {
+        borderRadius : '10px',
+        height : '50%',
+        display: 'flex',
+        flexDirection : 'column',
+       alignItems :'center',
+       textAlign: 'center',
+       padding : '50px',
+       fontWeight:'normal',
+       color : 'black'
+    },
+
+    impact_details: {
+        display : 'flex',
+        justifyContent : 'center',
+        alignItems : 'center',
+        justifyContent : 'center',
+        padding : '40px'
     }
-    // Purpose Box
+  
 });

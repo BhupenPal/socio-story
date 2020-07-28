@@ -18,7 +18,7 @@ const Home = (props) => {
           <div className={classes.HeaderMenu}>
             <a href=""><Button>Event Details</Button></a>
             <a href=""><Button>About Us</Button></a>
-            <a href=""><Button style={{ backgroundColor: '#31A297', marginLeft: 20 }}>Register Here</Button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVF6LM3b4cDNx7FXDj4XSOztYTY0Kuw3npY_q7dm8mOxO8VA/viewform?usp=send_form"><Button style={{ backgroundColor: '#31A297', marginLeft: 20 }}>Register Here</Button></a>
           </div>
         </Toolbar>
       </AppBar>
@@ -242,6 +242,72 @@ const Home = (props) => {
    </Grid>
 
 
+  <Grid container className = {classes.LightBG} spacing={2}>
+    <Grid item xs={12}>
+    <Typography variant='h2'>Nominate your Impact Story</Typography>
+    </Grid>  
+    <Grid item xs={12}>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVF6LM3b4cDNx7FXDj4XSOztYTY0Kuw3npY_q7dm8mOxO8VA/viewform?usp=send_form">
+      <Button style={{background : '#222753' , marginTop : 80}}>Share the story details here</Button>
+      </a>
+    </Grid>
+    <Grid item xs={12}>
+      <Typography>Nomination Fees</Typography>
+    </Grid>
+   <Grid container item spacing={3}>
+     <Grid xs={false} sm={2}></Grid>
+   <Grid item xs={12} sm={4}>
+      <Card className={classes.impact}>
+        <CardContent>
+          <Typography style={{marginBottom: 60}}>One Story</Typography>
+          <Typography variant='h5'>Rs 8000 + taxes</Typography>
+
+        </CardContent>
+      </Card>
+    </Grid>
+    <Grid item xs={12} sm={4}>
+      <Card className={classes.impact}>
+        <CardContent>
+          <Typography style={{marginBottom: 60}}>Two stories</Typography>
+          <Typography variant='h5'>Rs 15000 + taxes</Typography>
+
+        </CardContent>
+      </Card>
+    </Grid>
+    <Grid xs={false} sm={2}></Grid>
+   </Grid>
+
+   <Grid item xs={12}>
+     <Typography>Details of round 1</Typography>
+   </Grid>
+
+   <Grid item container>
+     <Grid item xs={1} sm={3}></Grid>
+     <Grid item xs={5} sm={3} className={classes.impact_details}>
+       <img src="../src/assets/img/virtual.png" style={{paddingRight:20}}></img>
+       <Typography>Mode: Virtual</Typography>
+     </Grid>
+     <Grid item xs={5} sm={3} className={classes.impact_details}>
+       <img src="../src/assets/img/calender.png" style={{paddingRight:20}}></img>
+       <Typography>Date: August 22, 2020</Typography>
+     </Grid>
+     <Grid item xs={1} sm={3}></Grid>
+     <Grid item xs={1} sm={3}></Grid>
+     <Grid item xs={5} sm={3} className={classes.impact_details}>
+       <img src="../src/assets/img/tick2.png" style={{paddingRight:20}}></img>
+       <Typography>Duration: 90 minutes </Typography>
+     </Grid>
+     <Grid item xs={5} sm={3} className={classes.impact_details}>
+       <img src="../src/assets/img/clock.png" style={{paddingRight:20}}></img>
+       <Typography> Time: 1600 hrs</Typography>
+     </Grid>
+     <Grid item xs={1} sm={3}></Grid>
+
+   </Grid>
+  
+   
+  </Grid> 
+   
    
 
     </Fragment>
