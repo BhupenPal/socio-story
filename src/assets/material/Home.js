@@ -17,6 +17,13 @@ export default theme => ({
         flexDirection: 'column',
         alignItems: 'center'
     },
+    WhiteBG: {
+        backgroundColor: '#FFFFFF',
+        padding: '15vh 0',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
     TextMargin: {
         margin: '70px 0 50px 0'
     },
@@ -77,6 +84,7 @@ export default theme => ({
         display: 'flex',
         flexDirection : 'column',
        alignItems :'center',
+       justifyContent : 'space-around',
        textAlign: 'center',
        padding : '40px 5px 40px 5px',
        fontWeight:'normal',
@@ -97,10 +105,16 @@ export default theme => ({
 
     impact_details: {
         display : 'flex',
-        justifyContent : 'center',
         alignItems : 'center',
-        justifyContent : 'center',
+        justifyContent : 'flex-start',
         padding : '40px'
+    },
+    jury : {
+        background : '#ABF0E9',
+        display : 'flex',
+        flexDirection : 'column',
+        alignItems : 'center',
+        justifyContent : 'center'
     }
   
 });
