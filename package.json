@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config=webpack.config.dev.js",
+    "dev": "webpack-dev-server --config=webpack.config.dev.js",
     "build": "webpack --config=webpack.config.prod.js",
     "start": "webpack-dev-server --config=webpack.config.dev.js --open"
   },
@@ -34,6 +34,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "react-slick": "^0.27.1",
+    "slick-carousel": "^1.8.1"
   }
 }

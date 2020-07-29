@@ -5,12 +5,52 @@
     src: url('../fonts/Poppins-Regular.ttf')
 }
 
-#root {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+html, body {
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+.participants-container {
+    width: 80% !important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    img {
+        width: 140px;
+        height: 140px;
+        margin: 10px 40px;
+    }
+}
+
+.past-container {
+    width: 80% !important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    img {
+        width: 330px;
+        height: 300px;
+        margin: 10px 40px;
+    }
+}
+
+.news-container {
+    width: 80% !important;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    img {
+        width: 280px;
+        height: 100px;
+        margin: 10px 40px;
+    }
 }

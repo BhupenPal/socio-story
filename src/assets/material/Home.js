@@ -65,56 +65,79 @@ export default theme => ({
     },
     Ribbon: {
         height: '8vw',
-        width: `${8*10.1}vw`
+        width: `${8 * 10.1}vw`
     },
-      // Purpose Box
-    
-    purpose:{
-        borderRadius : '20px',
-        height : '80%',
+    // Purpose Box
+
+    purpose: {
+        borderRadius: '20px',
+        height: '80%',
         display: 'flex',
-        flexDirection : 'column',
-       alignItems :'center',
-       textAlign: 'center'
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center'
     },
 
-    nomination:{
-        borderRadius : '20px',
-        height : '80%',
+    nomination: {
+        borderRadius: '20px',
+        height: '80%',
         display: 'flex',
-        flexDirection : 'column',
-       alignItems :'center',
-       justifyContent : 'space-around',
-       textAlign: 'center',
-       padding : '40px 5px 40px 5px',
-       fontWeight:'normal',
-       color : 'white'
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        textAlign: 'center',
+        padding: '40px 5px 40px 5px',
+        fontWeight: 'normal',
+        color: 'white'
     },
 
-    impact : {
-        borderRadius : '10px',
-        height : '50%',
+    impact: {
+        borderRadius: '10px',
+        height: '50%',
         display: 'flex',
-        flexDirection : 'column',
-       alignItems :'center',
-       textAlign: 'center',
-       padding : '50px',
-       fontWeight:'normal',
-       color : 'black'
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '50px',
+        fontWeight: 'normal',
+        color: 'black'
     },
 
     impact_details: {
-        display : 'flex',
-        alignItems : 'center',
-        justifyContent : 'flex-start',
-        padding : '40px'
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        padding: '40px'
     },
-    jury : {
-        background : '#ABF0E9',
-        display : 'flex',
-        flexDirection : 'column',
-        alignItems : 'center',
-        justifyContent : 'center'
+    jury: {
+        background: '#ABF0E9',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+
+    // Footer
+    LowerFooter: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderTop: '0.5px solid #043230',
+        borderBottom: '0.5px solid #043230',
+        width: '80%',
+        height: 75,
+        marginTop: 25
+    },
+
+    FooterSocial: {
+        margin: '0 10px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 40,
+        width: 40,
+        backgroundColor: '#222753',
+        borderRadius: 20,
+        color: '#fff'
     }
-  
 });
