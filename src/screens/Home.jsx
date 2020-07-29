@@ -48,6 +48,8 @@ import img14 from '../assets/img/slider/14.png'
 import img15 from '../assets/img/slider/15.png'
 import img16 from '../assets/img/slider/16.png'
 
+import EventDetails from '../assets/img/EVENT DETAILS.png'
+
 const Home = (props) => {
   const { classes } = props;
 
@@ -56,7 +58,33 @@ const Home = (props) => {
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
 
@@ -164,13 +192,13 @@ const Home = (props) => {
       </Grid>
 
       {/* Event Details */}
-      <Grid container className={classes.LightBG}>
+      <Grid container item className={classes.LightBG} id="event" xs={false}>
         <Grid item xs={12}>
-          <Typography variant='h2'>Event Details</Typography>
+          <Typography variant='h2' style={{marginBottom : 80}}>Event Details</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography variant='body1' align='center'>SocioStory is invites changemakers to share their impacts stories</Typography>
-          <Typography variant='body2' align='center'>Round 1 - Online Event</Typography>
+          <img src={EventDetails} alt=""/>
         </Grid>
         <Grid item xs={12}>
           {/* {stepper} */}
@@ -179,8 +207,8 @@ const Home = (props) => {
       </Grid>
 
       {/* Why Nominate */}
-      <Grid container className={classes.DarkBG}>
-        <Grid item xs={8}>
+      <Grid container className={classes.DarkBG} id="whyto">
+        <Grid item xs={8} style={{marginBottom : 80}}>
           <Typography variant='h2'>Why to Nominate?</Typography>
         </Grid>
         <Grid item xs={10} sm={8}>
@@ -244,14 +272,13 @@ const Home = (props) => {
               </CardContent>
             </Card>
           </Grid>
-          {/* <Grid item xs={false} sm={2}></Grid> */}
         </Grid>
       </Grid>
 
       {/* Nominate area */}
-      <Grid container className={classes.LightBG} spacing={2} justify="center">
+      <Grid container className={classes.LightBG} spacing={2} justify="center" id="nomination">
         <Grid item xs={8}>
-          <Typography variant='h2' style={{ paddingBottom: 50 }}>Nomination Areas</Typography>
+          <Typography variant='h2'style={{marginBottom : 80}}>Nomination Areas</Typography>
         </Grid>
         <Grid container item spacing={4} style={{ marginBottom: 80 }} justify="center">
           <Grid item xs={10} sm={5} lg={2}>
@@ -320,17 +347,17 @@ const Home = (props) => {
       <Grid container className={classes.DarkBG}>
         <Grid xs={2}></Grid>
         <Grid item xs={8}>
-          <Typography variant='h2'>Who can be Nominated</Typography>
+          <Typography variant='h2' style={{marginBottom : 80}}>Who can be Nominated</Typography>
         </Grid>
         <Grid xs={2}></Grid>
         <Grid xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{padding : 20}}>
           <Typography>A company can nominate two of its CSR Projects executed in the last 12-18 months or can nominate an NGO partner’s project.</Typography>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{padding : 20}}>
           <Typography>An NGO can nominate their high impact social project.</Typography>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{padding : 20}}>
           <Typography>An Individual can nominate their project if they are working on the ground with an NGO or directly with the community to bring a positive change in their lives </Typography>
         </Grid>
         <Grid xs={2}></Grid>
@@ -396,37 +423,29 @@ const Home = (props) => {
         </Grid>
       </Grid>
 
-      <Grid container className={classes.DarkBG} justify="center">
-        <Grid item xs={10} style={{ paddingBottom: 40 }}>
+      <Grid container className={classes.DarkBG} justify="center" id="about">
+        <Grid item xs={10} style={{marginBottom : 80}}>
           <Typography variant='h2'>About SocioStory</Typography>
         </Grid>
-        <Grid item container justify="center" spacing={2} style={{ paddingBottom: 40 }}>
-          <Grid item xs={10} sm={5}>
+        <Grid item xs={10} sm={6}>
+          <Card>
+          <img src="../src/assets/img/about.jpg"></img>
+          </Card>
+        </Grid>
+          <Grid item xs={10} lg={5} style={{padding : 30,textAlign : 'center'}}>
             <Typography>
               Sociostory is a social community platform that aims at recognizing the hardwork of social workers all across the globe.
         </Typography>
           </Grid>
-          <Grid item xs={10} sm={5}>
-            <Card style={{ background: '#C4C4C4', height: '100%', width: '80%', borderRadius: 10 }}>
-            </Card>
-          </Grid>
-        </Grid>
-        <Grid item container justify="center" style={{ paddingBottom: 40, height: 200 }}>
-          <Grid item xs={10} sm={5}>
+          <Grid item xs={10} lg={5} style={{padding : 30,textAlign : 'center'}}>
             <Typography>
               Founded in 2018, SocioStory envisions to tell 10,000 stories to change by 2025.
         </Typography>
           </Grid>
-          <Grid item xs={10} sm={5}>
-            <Card style={{ background: '#C4C4C4', height: '100%', width: '80%', borderRadius: 10 }}>
-            </Card>
-          </Grid>
-        </Grid>
-
       </Grid>
 
       <Grid container justify="center" className={classes.WhiteBG}>
-        <Typography variant="h2">
+        <Typography variant="h2" style={{marginBottom : 80}}>
           SocioStory in News
       </Typography>
         <Grid item container className='news-container'>
@@ -443,7 +462,7 @@ const Home = (props) => {
       {/* Jury section */}
       <Grid container className={classes.DarkBG} justify="center">
         <Grid item xs={8} style={{ marginBottom: 80 }}>
-          <Typography variant='h2'>
+          <Typography variant='h2' style={{marginBottom : 80}}>
             Jury Members
          </Typography>
         </Grid>
@@ -537,17 +556,17 @@ const Home = (props) => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container className={classes.LightBG}>
-        <Typography variant='h2'>Past Events</Typography>
-        <Typography>Our Flagship event has been attended by some of the top leaders, social changemakers and CSR leaders</Typography>
+      <Grid container className={classes.LightBG} id="past">
+        <Grid item xs={10}><Typography variant='h2' style={{marginBottom : 80}}>Past Events</Typography></Grid>
+       <Grid item xs={10}><Typography>Our Flagship event has been attended by some of the top leaders, social changemakers and CSR leaders</Typography></Grid>
         <Grid container className='past-container'>
           <img src={PastEvent1} alt="" />
           <img src={PastEvent2} alt="" />
           <img src={PastEvent3} alt="" />
         </Grid>
       </Grid>
-      <Grid container className={classes.WhiteBG}>
-        <Typography align='center' variant='h2'>Previous Participants</Typography>
+      <Grid container className={classes.WhiteBG} id="previous">
+        <Typography align='center' variant='h2' style={{marginBottom : 80}}>Previous Participants</Typography>
         <Grid container className='participants-container'>
           <img src={ShoutForHelp} alt="" />
           <img src={Moodys} alt="" />
@@ -565,31 +584,31 @@ const Home = (props) => {
       </Grid>
       <Grid container className={classes.DarkBG}>
         <Grid container justify='center'>
-          <Grid item xs={12} md={3}>
-            <Typography><LanguageIcon /> www.sociostory.org</Typography>
-            <Typography><MailOutlineIcon /> manoj@sociostory.in</Typography>
-            <Typography><PhoneOutlinedIcon /> +91 8447012571</Typography>
-            <Typography><LocationOnOutlinedIcon /> Amigo, First Floor, C-25, Noida Sector 8, Uttar Pradesh, India</Typography>
+          <Grid item xs={12} md={3} style={{textAlign : 'center'}}>
+            <a href="https://sociostory.org/"><Typography style={{padding : 20}}><LanguageIcon />www.sociostory.org</Typography></a>
+            <Typography style={{padding : 20}}><MailOutlineIcon />manoj@sociostory.in</Typography>
+            <Typography style={{padding : 20}}><PhoneOutlinedIcon />+91 8447012571</Typography>
+            <Typography style={{padding : 20}}><LocationOnOutlinedIcon />Amigo, First Floor, C-25, Noida Sector 8, Uttar Pradesh, India</Typography>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Typography>SocioStory</Typography>
-            <Typography>About Us</Typography>
-            <Typography>Past Events</Typography>
-            <Typography>Previous Participants</Typography>
+          <Grid item xs={12} md={3} style={{justifyContent : 'center',textAlign : 'center'}} class="footertop">
+            <Typography style={{fontWeight : 'bold',padding : 20}}>SocioStory</Typography>
+            <a href="#about"><Typography style={{padding : 20}}>About Us</Typography></a>
+            <a href="#past"><Typography style={{padding : 20}}>Past Events</Typography></a>
+            <a href="#previous"><Typography style={{padding : 20}}>Previous Participants</Typography></a>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Typography>About Event</Typography>
-            <Typography>Event Details</Typography>
-            <Typography>Why Nominate</Typography>
-            <Typography>Areas to Nominate</Typography>
+          <Grid item xs={12} md={3} style={{textAlign : 'center'}} class="footertop">
+         <Typography style={{fontWeight : 'bold',padding : 20}}>About Event</Typography>
+         <a href="#event"><Typography style={{padding : 20}}>Event Details</Typography></a>
+         <a href="#whyto"><Typography style={{padding : 20}}>Why Nominate</Typography></a>
+         <a href="#nomination"><Typography style={{padding : 20}}>Areas to Nominate</Typography></a>
           </Grid>
         </Grid>
         <Grid className={classes.LowerFooter}>
           <Typography style={{ marginRight: 10 }}>Follow Us On</Typography>
-          <div className={classes.FooterSocial}><LinkedInIcon /></div>
-          <div className={classes.FooterSocial}><InstagramIcon /></div>
-          <div className={classes.FooterSocial}><FacebookIcon /></div>
-          <div className={classes.FooterSocial}><TwitterIcon /></div>
+          <a href="https://www.linkedin.com/company/socio-story" className={classes.FooterSocial}><span style={{color : 'white'}}><LinkedInIcon /></span></a>
+          <a href="https://www.instagram.com/sociostoryofficial/" className={classes.FooterSocial}><span style={{color : 'white'}}><InstagramIcon /></span></a>
+          <a href="https://www.facebook.com/SocioStoryOfficial" className={classes.FooterSocial}><span style={{color : 'white'}}><FacebookIcon /></span></a>
+          <a href="https://twitter.com/SocioStory" className={classes.FooterSocial}><span style={{color : 'white'}}><TwitterIcon /></span></a>
         </Grid>
       </Grid>
     </Fragment>
