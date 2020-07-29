@@ -91,7 +91,9 @@ const Home = (props) => {
   return (
     <Fragment>
       {/* Header Element */}
-      <AppBar position="static">
+      <Grid container justify="center">
+        <Grid item xs={12}>
+        <AppBar position="static">
         <Toolbar className={classes.HeaderFlex}>
           <a href="/">
             <Typography className={classes.Logo} variant='h3' style={{ fontWeight: 600 }}>SocioStory</Typography>
@@ -99,10 +101,13 @@ const Home = (props) => {
           <div className={classes.HeaderMenu}>
             <a href=""><Button>Event Details</Button></a>
             <a href=""><Button>About Us</Button></a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVF6LM3b4cDNx7FXDj4XSOztYTY0Kuw3npY_q7dm8mOxO8VA/viewform?usp=send_form"><Button style={{ backgroundColor: '#31A297', marginLeft: 20 }}>Register Here</Button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVF6LM3b4cDNx7FXDj4XSOztYTY0Kuw3npY_q7dm8mOxO8VA/viewform?usp=send_form"><Button style={{ backgroundColor: '#31A297', marginLeft: 10 }}>Register Here</Button></a>
           </div>
         </Toolbar>
       </AppBar>
+        </Grid>
+
+      </Grid>
 
       {/* Hero Box */}
       <Grid container className={classes.HeroBox}>
@@ -192,17 +197,17 @@ const Home = (props) => {
       </Grid>
 
       {/* Event Details */}
-      <Grid container item className={classes.LightBG} id="event" xs={false}>
-        <Grid item xs={12}>
+      <Grid container item className={classes.LightBG} id="event" justify="center">
+        <Grid item xs={10}>
           <Typography variant='h2' style={{marginBottom : 80}}>Event Details</Typography>
         </Grid>
-        <Grid item xs={12}>
-          <Typography variant='body1' align='center'>SocioStory is invites changemakers to share their impacts stories</Typography>
-          <img src={EventDetails} alt=""/>
+        <Grid item xs={10} style={{marginBottom : 50}}>
+          <Typography variant='body1' align='center'>SocioStory invites changemakers to share their impacts stories</Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} class="rounds">
           {/* {stepper} */}
           {/* Timeline seems better option here */}
+          <img src={EventDetails} alt=""/>
         </Grid>
       </Grid>
 
@@ -445,9 +450,11 @@ const Home = (props) => {
       </Grid>
 
       <Grid container justify="center" className={classes.WhiteBG}>
-        <Typography variant="h2" style={{marginBottom : 80}}>
+       <Grid item xs={10}>
+       <Typography variant="h2" style={{marginBottom : 80}}>
           SocioStory in News
       </Typography>
+       </Grid>
         <Grid item container className='news-container'>
           <img src="../src/assets/img/business.png" alt="" />
           <img src="../src/assets/img/story.png" alt="" />
