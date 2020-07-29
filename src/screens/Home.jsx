@@ -567,10 +567,10 @@ const Home = (props) => {
         </Grid>
         <Grid className={classes.LowerFooter}>
           <Typography style={{ marginRight: 10 }}>Follow Us On</Typography>
-          <div href="https://www.linkedin.com/company/socio-story" className={classes.FooterSocial}><LinkedInIcon /></div>
-          <div href="https://www.instagram.com/sociostoryofficial/" className={classes.FooterSocial}><InstagramIcon /></div>
-          <div href="https://www.facebook.com/SocioStoryOfficial" className={classes.FooterSocial}><FacebookIcon /></div>
-          <div href="https://twitter.com/SocioStory" className={classes.FooterSocial}><TwitterIcon /></div>
+          <a href="https://www.linkedin.com/company/socio-story" className={classes.FooterSocial}><span style={{color : 'white'}}><LinkedInIcon /></span></a>
+          <a href="https://www.instagram.com/sociostoryofficial/" className={classes.FooterSocial}><span style={{color : 'white'}}><InstagramIcon /></span></a>
+          <a href="https://www.facebook.com/SocioStoryOfficial" className={classes.FooterSocial}><span style={{color : 'white'}}><FacebookIcon /></span></a>
+          <a href="https://twitter.com/SocioStory" className={classes.FooterSocial}><span style={{color : 'white'}}><TwitterIcon /></span></a>
         </Grid>
       </Grid>
     </Fragment>
