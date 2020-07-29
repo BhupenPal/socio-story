@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { withStyles, AppBar, Toolbar, Typography, Button, Grid, Box, CardContent, Card, CardMedia } from "@material-ui/core";
+import { withStyles, AppBar, Toolbar, Typography, Button, Grid, Box, CardContent, Card, CardMedia, Divider } from "@material-ui/core";
 import styles from '../assets/material/Home'
 import Star from '../assets/img/star.png'
 import Ribbon from '../assets/img/Ribbon.png'
@@ -31,43 +31,32 @@ import PastEvent1 from '../assets/img/Past Events/1.png'
 import PastEvent2 from '../assets/img/Past Events/2.png'
 import PastEvent3 from '../assets/img/Past Events/3.png'
 
+import img1 from '../assets/img/slider/1.png'
+import img2 from '../assets/img/slider/2.png'
+import img3 from '../assets/img/slider/3.png'
+import img4 from '../assets/img/slider/4.png'
+import img5 from '../assets/img/slider/5.png'
+import img6 from '../assets/img/slider/6.png'
+import img7 from '../assets/img/slider/7.png'
+import img8 from '../assets/img/slider/8.png'
+import img9 from '../assets/img/slider/9.png'
+import img10 from '../assets/img/slider/10.png'
+import img11 from '../assets/img/slider/11.png'
+import img12 from '../assets/img/slider/12.png'
+import img13 from '../assets/img/slider/13.png'
+import img14 from '../assets/img/slider/14.png'
+import img15 from '../assets/img/slider/15.png'
+import img16 from '../assets/img/slider/16.png'
+
 const Home = (props) => {
   const { classes } = props;
 
   var settings = {
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: false,
-    infinite: true,
+    className: "center",
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    slidesToScroll: 1
   };
 
 
@@ -119,26 +108,56 @@ const Home = (props) => {
 
       {/* Joing Leaders */}
       <Grid container className={classes.DarkBG} spacing={2}>
-        <Grid item xs={12}>
+        <Grid container item xs={12} justify='center'>
           <Typography variant='h2' align='center'>Join the Impact Leaders</Typography>
-          <Slider {...settings}>
-            <div style={{ width: '100%' }}>
-              <h3>1</h3>
+          <Slider {...settings} style={{ width: '80%' }}>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img1} alt="" />
             </div>
             <div>
-              <h3>2</h3>
+              <img style={{ margin: '0 auto' }} src={img2} alt="" />
             </div>
             <div>
-              <h3>3</h3>
+              <img style={{ margin: '0 auto' }} src={img3} alt="" />
             </div>
             <div>
-              <h3>4</h3>
+              <img style={{ margin: '0 auto' }} src={img4} alt="" />
             </div>
             <div>
-              <h3>5</h3>
+              <img style={{ margin: '0 auto' }} src={img5} alt="" />
             </div>
             <div>
-              <h3>6</h3>
+              <img style={{ margin: '0 auto' }} src={img6} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img7} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img8} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img9} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img10} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img11} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img12} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img13} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img14} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img15} alt="" />
+            </div>
+            <div>
+              <img style={{ margin: '0 auto' }} src={img16} alt="" />
             </div>
           </Slider>
         </Grid>
