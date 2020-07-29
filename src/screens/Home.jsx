@@ -305,13 +305,13 @@ const Home = (props) => {
         </Grid>
         <Grid xs={2}></Grid>
         <Grid xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{padding : 20}}>
           <Typography>A company can nominate two of its CSR Projects executed in the last 12-18 months or can nominate an NGO partner’s project.</Typography>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{padding : 20}}>
           <Typography>An NGO can nominate their high impact social project.</Typography>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{padding : 20}}>
           <Typography>An Individual can nominate their project if they are working on the ground with an NGO or directly with the community to bring a positive change in their lives </Typography>
         </Grid>
         <Grid xs={2}></Grid>
@@ -381,29 +381,21 @@ const Home = (props) => {
         <Grid item xs={10} style={{marginBottom : 80}}>
           <Typography variant='h2'>About SocioStory</Typography>
         </Grid>
-        <Grid item container justify="center" spacing={2} style={{ paddingBottom: 40 }}>
-          <Grid item xs={10} sm={5}>
+        <Grid item xs={10} sm={6}>
+          <Card>
+          <img src="../src/assets/img/about.jpg"></img>
+          </Card>
+        </Grid>
+          <Grid item xs={10} lg={5} style={{padding : 30,textAlign : 'center'}}>
             <Typography>
               Sociostory is a social community platform that aims at recognizing the hardwork of social workers all across the globe.
         </Typography>
           </Grid>
-          <Grid item xs={10} sm={5}>
-            <Card style={{ background: '#C4C4C4', height: '100%', width: '80%', borderRadius: 10 }}>
-            </Card>
-          </Grid>
-        </Grid>
-        <Grid item container justify="center" style={{ paddingBottom: 40, height: 200 }}>
-          <Grid item xs={10} sm={5}>
+          <Grid item xs={10} lg={5} style={{padding : 30,textAlign : 'center'}}>
             <Typography>
               Founded in 2018, SocioStory envisions to tell 10,000 stories to change by 2025.
         </Typography>
           </Grid>
-          <Grid item xs={10} sm={5}>
-            <Card style={{ background: '#C4C4C4', height: '100%', width: '80%', borderRadius: 10 }}>
-            </Card>
-          </Grid>
-        </Grid>
-
       </Grid>
 
       <Grid container justify="center" className={classes.WhiteBG}>
@@ -519,8 +511,8 @@ const Home = (props) => {
         </Grid>
       </Grid>
       <Grid container className={classes.LightBG} id="past">
-        <Typography variant='h2' style={{marginBottom : 80}}>Past Events</Typography>
-        <Typography>Our Flagship event has been attended by some of the top leaders, social changemakers and CSR leaders</Typography>
+        <Grid item xs={10}><Typography variant='h2' style={{marginBottom : 80}}>Past Events</Typography></Grid>
+       <Grid item xs={10}><Typography>Our Flagship event has been attended by some of the top leaders, social changemakers and CSR leaders</Typography></Grid>
         <Grid container className='past-container'>
           <img src={PastEvent1} alt="" />
           <img src={PastEvent2} alt="" />
@@ -547,10 +539,10 @@ const Home = (props) => {
       <Grid container className={classes.DarkBG}>
         <Grid container justify='center'>
           <Grid item xs={12} md={3} style={{textAlign : 'center'}}>
-            <a href="https://sociostory.org/"><Typography style={{padding : 20}}><LanguageIcon /> www.sociostory.org</Typography></a>
-            <Typography style={{padding : 20}}><MailOutlineIcon /> manoj@sociostory.in</Typography>
-            <Typography style={{padding : 20}}><PhoneOutlinedIcon /> +91 8447012571</Typography>
-            <Typography style={{padding : 20}}><LocationOnOutlinedIcon /> Amigo, First Floor, C-25, Noida Sector 8, Uttar Pradesh, India</Typography>
+            <a href="https://sociostory.org/"><Typography style={{padding : 20}}><LanguageIcon />www.sociostory.org</Typography></a>
+            <Typography style={{padding : 20}}><MailOutlineIcon />manoj@sociostory.in</Typography>
+            <Typography style={{padding : 20}}><PhoneOutlinedIcon />+91 8447012571</Typography>
+            <Typography style={{padding : 20}}><LocationOnOutlinedIcon />Amigo, First Floor, C-25, Noida Sector 8, Uttar Pradesh, India</Typography>
           </Grid>
           <Grid item xs={12} md={3} style={{justifyContent : 'center',textAlign : 'center'}} class="footertop">
             <Typography style={{fontWeight : 'bold',padding : 20}}>SocioStory</Typography>
