@@ -139,5 +139,12 @@ export default theme => ({
         backgroundColor: '#222753',
         borderRadius: 20,
         color: '#fff'
+    },
+    FooterLinks: {
+        textDecoration : 'none'
+    },
+    FooterLinkClick : {
+        textDecoration : 'none',
+        color : 'black'
     }
 });

@@ -120,7 +120,7 @@ const Home = (props) => {
       {/* Joing Leaders */}
       <Grid container className={classes.DarkBG} spacing={2}>
         <Grid item xs={12}>
-          <Typography variant='h2' align='center'>Join the Impact Leaders</Typography>
+          <Typography variant='h2' align='center' style={{marginBottom : 80}}>Join the Impact Leaders</Typography>
           <Slider {...settings}>
             <div style={{ width: '100%' }}>
               <h3>1</h3>
@@ -145,9 +145,9 @@ const Home = (props) => {
       </Grid>
 
       {/* Event Details */}
-      <Grid container className={classes.LightBG}>
+      <Grid container className={classes.LightBG} id="event">
         <Grid item xs={12}>
-          <Typography variant='h2'>Event Details</Typography>
+          <Typography variant='h2' style={{marginBottom : 80}}>Event Details</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography variant='body1' align='center'>SocioStory is invites changemakers to share their impacts stories</Typography>
@@ -160,8 +160,8 @@ const Home = (props) => {
       </Grid>
 
       {/* Why Nominate */}
-      <Grid container className={classes.DarkBG}>
-        <Grid item xs={8}>
+      <Grid container className={classes.DarkBG} id="whyto">
+        <Grid item xs={8} style={{marginBottom : 80}}>
           <Typography variant='h2'>Why to Nominate?</Typography>
         </Grid>
         <Grid item xs={10} sm={8}>
@@ -230,9 +230,9 @@ const Home = (props) => {
       </Grid>
 
       {/* Nominate area */}
-      <Grid container className={classes.LightBG} spacing={2} justify="center">
+      <Grid container className={classes.LightBG} spacing={2} justify="center" id="nomination">
         <Grid item xs={8}>
-          <Typography variant='h2' style={{ paddingBottom: 50 }}>Nomination Areas</Typography>
+          <Typography variant='h2'style={{marginBottom : 80}}>Nomination Areas</Typography>
         </Grid>
         <Grid container item spacing={4} style={{ marginBottom: 80 }} justify="center">
           <Grid item xs={10} sm={5} lg={2}>
@@ -301,7 +301,7 @@ const Home = (props) => {
       <Grid container className={classes.DarkBG}>
         <Grid xs={2}></Grid>
         <Grid item xs={8}>
-          <Typography variant='h2'>Who can be Nominated</Typography>
+          <Typography variant='h2' style={{marginBottom : 80}}>Who can be Nominated</Typography>
         </Grid>
         <Grid xs={2}></Grid>
         <Grid xs={2}></Grid>
@@ -377,8 +377,8 @@ const Home = (props) => {
         </Grid>
       </Grid>
 
-      <Grid container className={classes.DarkBG} justify="center">
-        <Grid item xs={10} style={{ paddingBottom: 40 }}>
+      <Grid container className={classes.DarkBG} justify="center" id="about">
+        <Grid item xs={10} style={{marginBottom : 80}}>
           <Typography variant='h2'>About SocioStory</Typography>
         </Grid>
         <Grid item container justify="center" spacing={2} style={{ paddingBottom: 40 }}>
@@ -407,7 +407,7 @@ const Home = (props) => {
       </Grid>
 
       <Grid container justify="center" className={classes.WhiteBG}>
-        <Typography variant="h2">
+        <Typography variant="h2" style={{marginBottom : 80}}>
           SocioStory in News
       </Typography>
         <Grid item container className='news-container'>
@@ -424,7 +424,7 @@ const Home = (props) => {
       {/* Jury section */}
       <Grid container className={classes.DarkBG} justify="center">
         <Grid item xs={8} style={{ marginBottom: 80 }}>
-          <Typography variant='h2'>
+          <Typography variant='h2' style={{marginBottom : 80}}>
             Jury Members
          </Typography>
         </Grid>
@@ -518,8 +518,8 @@ const Home = (props) => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container className={classes.LightBG}>
-        <Typography variant='h2'>Past Events</Typography>
+      <Grid container className={classes.LightBG} id="past">
+        <Typography variant='h2' style={{marginBottom : 80}}>Past Events</Typography>
         <Typography>Our Flagship event has been attended by some of the top leaders, social changemakers and CSR leaders</Typography>
         <Grid container className='past-container'>
           <img src={PastEvent1} alt="" />
@@ -527,8 +527,8 @@ const Home = (props) => {
           <img src={PastEvent3} alt="" />
         </Grid>
       </Grid>
-      <Grid container className={classes.WhiteBG}>
-        <Typography align='center' variant='h2'>Previous Participants</Typography>
+      <Grid container className={classes.WhiteBG} id="previous">
+        <Typography align='center' variant='h2' style={{marginBottom : 80}}>Previous Participants</Typography>
         <Grid container className='participants-container'>
           <img src={ShoutForHelp} alt="" />
           <img src={Moodys} alt="" />
@@ -546,31 +546,31 @@ const Home = (props) => {
       </Grid>
       <Grid container className={classes.DarkBG}>
         <Grid container justify='center'>
-          <Grid item xs={12} md={3}>
-            <Typography><LanguageIcon /> www.sociostory.org</Typography>
-            <Typography><MailOutlineIcon /> manoj@sociostory.in</Typography>
-            <Typography><PhoneOutlinedIcon /> +91 8447012571</Typography>
-            <Typography><LocationOnOutlinedIcon /> Amigo, First Floor, C-25, Noida Sector 8, Uttar Pradesh, India</Typography>
+          <Grid item xs={12} md={3} style={{textAlign : 'center'}}>
+            <a href="https://sociostory.org/"><Typography style={{padding : 20}}><LanguageIcon /> www.sociostory.org</Typography></a>
+            <Typography style={{padding : 20}}><MailOutlineIcon /> manoj@sociostory.in</Typography>
+            <Typography style={{padding : 20}}><PhoneOutlinedIcon /> +91 8447012571</Typography>
+            <Typography style={{padding : 20}}><LocationOnOutlinedIcon /> Amigo, First Floor, C-25, Noida Sector 8, Uttar Pradesh, India</Typography>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Typography>SocioStory</Typography>
-            <Typography>About Us</Typography>
-            <Typography>Past Events</Typography>
-            <Typography>Previous Participants</Typography>
+          <Grid item xs={12} md={3} style={{justifyContent : 'center',textAlign : 'center'}} class="footertop">
+            <Typography style={{fontWeight : 'bold',padding : 20}}>SocioStory</Typography>
+            <a href="#about"><Typography style={{padding : 20}}>About Us</Typography></a>
+            <a href="#past"><Typography style={{padding : 20}}>Past Events</Typography></a>
+            <a href="#previous"><Typography style={{padding : 20}}>Previous Participants</Typography></a>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <Typography>About Event</Typography>
-            <Typography>Event Details</Typography>
-            <Typography>Why Nominate</Typography>
-            <Typography>Areas to Nominate</Typography>
+          <Grid item xs={12} md={3} style={{textAlign : 'center'}} class="footertop">
+         <Typography style={{fontWeight : 'bold',padding : 20}}>About Event</Typography>
+         <a href="#event"><Typography style={{padding : 20}}>Event Details</Typography></a>
+         <a href="#whyto"><Typography style={{padding : 20}}>Why Nominate</Typography></a>
+         <a href="#nomination"><Typography style={{padding : 20}}>Areas to Nominate</Typography></a>
           </Grid>
         </Grid>
         <Grid className={classes.LowerFooter}>
           <Typography style={{ marginRight: 10 }}>Follow Us On</Typography>
-          <div className={classes.FooterSocial}><LinkedInIcon /></div>
-          <div className={classes.FooterSocial}><InstagramIcon /></div>
-          <div className={classes.FooterSocial}><FacebookIcon /></div>
-          <div className={classes.FooterSocial}><TwitterIcon /></div>
+          <div href="https://www.linkedin.com/company/socio-story" className={classes.FooterSocial}><LinkedInIcon /></div>
+          <div href="https://www.instagram.com/sociostoryofficial/" className={classes.FooterSocial}><InstagramIcon /></div>
+          <div href="https://www.facebook.com/SocioStoryOfficial" className={classes.FooterSocial}><FacebookIcon /></div>
+          <div href="https://twitter.com/SocioStory" className={classes.FooterSocial}><TwitterIcon /></div>
         </Grid>
       </Grid>
     </Fragment>

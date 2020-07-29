@@ -9,9 +9,19 @@ html, body {
     overflow-x: hidden;
 }
 
-a {
+ a {
+    color: black;
     text-decoration: none;
 }
+
+.FooterSocial:visited{
+    color: white;
+}
+ a:visited{
+    text-decoration: none;
+    color: black;
+}
+
 
 .participants-container {
     width: 80% !important;
