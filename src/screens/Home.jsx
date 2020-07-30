@@ -94,7 +94,7 @@ const Home = (props) => {
       <Grid container justify="center">
         <Grid item xs={12}>
         <AppBar position="static">
-        <Toolbar className={classes.HeaderFlex}>
+        <Toolbar className="HeaderFlex">
           <a href="/">
             <Typography className={classes.Logo} variant='h3' style={{ fontWeight: 600 }}>SocioStory</Typography>
           </a>

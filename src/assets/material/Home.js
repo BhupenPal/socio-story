@@ -29,13 +29,6 @@ export default theme => ({
     },
 
     //Header
-    HeaderFlex: {
-        padding: '0 10%',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: 90
-    },
     HeaderMenu: {
         display: 'flex',
         alignItems: 'center'
