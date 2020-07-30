@@ -120,11 +120,11 @@ const Home = (props) => {
       </Grid>
 
       {/* Purpose Box */}
-      <Grid item className={classes.LightBG}>
+      <Grid container className={classes.LightBG} justify="center">
+        <Grid item xs={10}>
         <Typography variant='h2' align='center'>Purpose</Typography>
-        <Grid container>
-          <Grid item xs={false} sm={2}></Grid>
-          <Grid item xs={12} sm={8}>
+        </Grid>
+          <Grid item xs={10} sm={8}>
             <Typography align='center' variant='body1' className={classes.TextMargin}>Sociostory aims to build a community to drive sustainable social change in India</Typography>
             <Typography align='center' variant='body1'>
               Through our platform, we aim to highlight the stories
@@ -132,8 +132,7 @@ const Home = (props) => {
               to the Sustainable Development Goals (SDGs) and have impacted lives beyond
           the lifecycle of their project interventions.</Typography>
           </Grid>
-          <Grid item xs={false} sm={2}></Grid>
-        </Grid>
+      
         {/* <Box width="45%">
           
         </Box> */}
