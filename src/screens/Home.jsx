@@ -99,8 +99,8 @@ const Home = (props) => {
             <Typography className={classes.Logo} variant='h3' style={{ fontWeight: 600 }}>SocioStory</Typography>
           </a>
           <div className={classes.HeaderMenu}>
-            <a href=""><Button>Event Details</Button></a>
-            <a href=""><Button>About Us</Button></a>
+            <a href="#event"><Button>Event Details</Button></a>
+            <a href="#about"><Button>About Us</Button></a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVF6LM3b4cDNx7FXDj4XSOztYTY0Kuw3npY_q7dm8mOxO8VA/viewform?usp=send_form"><Button style={{ backgroundColor: '#31A297', marginLeft: 10 }}>Register Here</Button></a>
           </div>
         </Toolbar>
@@ -479,7 +479,7 @@ const Home = (props) => {
               <img src="../src/assets/img/jury1.png"></img>
               <CardContent className={classes.jury}>
                 <Typography variant='h5' style={{ fontWeight: 'bold' }}>
-                  Manipadma Datta
+                  Dr.Manipadma Datta
              </Typography>
                 <Typography variant='h5'>
                   Vice Chancellor
@@ -492,32 +492,29 @@ const Home = (props) => {
           </Grid>
           <Grid item xs={10} sm={4}>
             <Card className={classes.jury}>
-              <img src="../src/assets/img/jury2.png"></img>
+              <img src="../src/assets/img/jury3.png"></img>
               <CardContent className={classes.jury}>
                 <Typography variant='h5' style={{ fontWeight: 'bold' }}>
-                  Mr Prashant Rakesh Chauhan
+                   Dr Seema Sharma
              </Typography>
                 <Typography variant='h5'>
-                  Assistant Professor
+                   Head of Department
              </Typography>
-                <Typography variant='h5'>
-                  Amity Institute of Social Sciences
+             <Typography variant='h5'>
+                  IIT Delhi
              </Typography>
               </CardContent>
             </Card>
           </Grid>
           <Grid item xs={10} sm={3}>
             <Card className={classes.jury}>
-              <img src="../src/assets/img/jury3.png"></img>
+              <img src="../src/assets/img/jury2.png"></img>
               <CardContent className={classes.jury}>
                 <Typography variant='h5' style={{ fontWeight: 'bold' }}>
-                  Dr Seema Sharma
+                Prof Prashant Rakesh Chauhan
              </Typography>
                 <Typography variant='h5'>
-                  Head of Department
-             </Typography>
-                <Typography variant='h5'>
-                  IIT Delhi
+                Amity Institute of Social Sciences
              </Typography>
               </CardContent>
             </Card>
@@ -550,7 +547,7 @@ const Home = (props) => {
               <img src="../src/assets/img/jury5.png"></img>
               <CardContent className={classes.jury}>
                 <Typography variant='h5' style={{ fontWeight: 'bold' }}>
-                  Yashveer Singh
+                  Mr.Yashveer Singh
              </Typography>
                 <Typography variant='h5'>
                   Executive Director, Ashoka
