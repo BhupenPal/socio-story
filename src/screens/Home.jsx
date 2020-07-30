@@ -112,9 +112,9 @@ const Home = (props) => {
       {/* Hero Box */}
       <Grid container className={classes.HeroBox}>
         <Grid item>
-          <img src={Star} />
-          <Typography variant='h2' className={classes.HeroHeading}>LEADERS</Typography>
-          <Typography className={classes.HeroText}>FOR SOCIAL CHANGE</Typography>
+          <img src={Star} style={{ width: '45vw', objectFit: 'contain' }} />
+          {/* <Typography variant='h2' className={classes.HeroHeading}>LEADERS</Typography>
+          <Typography className={classes.HeroText}>FOR SOCIAL CHANGE</Typography> */}
           <img src={Ribbon} alt="Sustainable Ribbon Text" className={classes.Ribbon} />
         </Grid>
       </Grid>
